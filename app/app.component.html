@@ -19,11 +19,13 @@
 					</li>
 				</ul>
 
-				<user-form></user-form>
+				<!-- output -->
+				<user-form (userCreated)="onUserCreated($event)"></user-form>
 			</div>
 		</div>
 		<div class="col-sm-8">
 			
+			<!-- input -->
 			<user-profile [user]="activeUser" ></user-profile>
 
 			<div class="jumbotron" *ngIf="!activeUser">

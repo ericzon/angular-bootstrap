@@ -11,5 +11,5 @@ import { User } from '../shared/models/user';
 	`
 })
 export class UserProfileComponent {
-	@Input() user: User;
+	@Input() user: User; // Putting info into a component
 }
